@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <title>Integrador 1</title>
 </head>
 
@@ -24,21 +26,36 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Convertite en creador</a>
                 </li>
-                <li class="nav-item" href="#">Comprar ticket</li>
+                <li class="nav-item">
+                    <a class="nav-link success" href="#">Comprar ticket</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="card bg-dark text-white text-end">
-            <img src="..." class="img-fluid" alt="...">
-            <div class="card-img-overlay">
-                <h5 class="card-title">Conf Bs As</h5>
-                <p class="card-text">Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra
-                    comunidad el conociemiento y la experiencia de los expertos que están creando el futuro de internet.
-                    Ven a conocer a los miembros del evento, otros estudiantes de Codo a Codo y los oradores de primer
-                    nivel que tenemos para ti. Te esperamos!</p>
-                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                <button type="button" class="btn btn-success">Comprar tickets</button>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner white-text text-end">
+                <div class="carousel-item active">
+                    <img src="./img/ba1.jpg" class="d-block w-100" alt="BS">
+                    <div class="card-img-overlay carousel-text">
+                        <h5 class="card-title">Conf Bs As</h5>
+                        <p class="card-text">Bs As llega por primera vez a la Argentina. Un evento para compartir con
+                            nuestra
+                            comunidad el conociemiento y la experiencia de los expertos que están creando el futuro de
+                            internet.
+                            Ven a conocer a los miembros del evento, otros estudiantes de Codo a Codo y los oradores de
+                            primer
+                            nivel que tenemos para ti. Te esperamos!</p>
+                        <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                        <button type="button" class="btn btn-success">Comprar tickets</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ba2.jpg" class="d-block w-100" alt="ba2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ba3.jpg" class="d-block w-100" alt="ba">
+                </div>
             </div>
         </div>
         <div class="speeker">
@@ -46,37 +63,42 @@
                 <p>CONOCE A LOS</p>
                 <H3>ORADORES</H3>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span class="badge bg-warning text-dark">JavaScript</span>
-                    <span class="badge bg-info">React</span>
-                    <h5 class="card-title">Steve Jobs</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore dicta cumque,
-                        sit deserunt laudantium officia, explicabo suscipit debitis reprehenderit nulla, temporibus et
-                        necessitatibus quae provident? Voluptatibus, eligendi! Sint, ab repellat.</p>
+            <div class="card-group">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/steve.jpg" class="card-img-top" alt="Steve">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark">JavaScript</span>
+                        <span class="badge bg-info">React</span>
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore dicta
+                            cumque,
+                            sit deserunt laudantium officia, explicabo suscipit debitis reprehenderit nulla, temporibus
+                            et
+                            necessitatibus quae provident? Voluptatibus, eligendi! Sint, ab repellat.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span class="badge bg-warning text-dark">JavaScript</span>
-                    <span class="badge bg-info">React</span>
-                    <h5 class="card-title">Bill Gates</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio,
-                        voluptate sed, quae incidunt corporis hic iure labore odit autem expedita at dicta vel
-                        asperiores adipisci vitae ducimus quia ratione!</p>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/bill.jpg" class="card-img-top" alt="Bill">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark">JavaScript</span>
+                        <span class="badge bg-info">React</span>
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio,
+                            voluptate sed, quae incidunt corporis hic iure labore odit autem expedita at dicta vel
+                            asperiores adipisci vitae ducimus quia ratione!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <span class="badge bg-secondary">Negocios</span>
-                    <span class="badge bg-danger">Startups</span>
-                    <h5 class="card-title">Ada Lovelace</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur,
-                        facilis. Alias, fuga nostrum exercitationem quo autem optio, hic non quidem odio, nisi corporis
-                        eaque incidunt labore. Debitis veritatis voluptas distinctio.</p>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/ada.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge bg-secondary">Negocios</span>
+                        <span class="badge bg-danger">Startups</span>
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur,
+                            facilis. Alias, fuga nostrum exercitationem quo autem optio, hic non quidem odio, nisi
+                            corporis
+                            eaque incidunt labore. Debitis veritatis voluptas distinctio.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,6 +126,8 @@
                 <H3>ORADOR</H3>
             </div>
             <form action="/" method="post">
+                <p>Anotate como rodador para dar una <span>Charla ignite</span>. Cuéntanos aquí de qué querés hablar!
+                </p>
                 <div class="row">
                     <div class="col">
                         <input type="text" class="form-control form-control-sm" placeholder="Nombre"
@@ -115,11 +139,46 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Sobre qué querés hablar?</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Sobre qué querés hablar?"></textarea>
+                    <p class="little">Recuenda incluir un título para tu charla</p>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary enviar" type="button">Enviar</button>
+                    </div>
             </form>
         </div>
     </main>
+    <footer class="footer">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Preguntas Frequentes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contactanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Conferencia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Términos y condiciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Privacidad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Estudiantes</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+        integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
